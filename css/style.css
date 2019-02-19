@@ -78,7 +78,7 @@ p{
   box-shadow: 5px 5px var(--shadow-color);
 }
 article.contact{
-	background-image: url(../images/location.PNG);
+	background-image: url(../images/location.png);
 	background-size:100%;
 	background-repeat:no-repeat;
 	max-height:556px
