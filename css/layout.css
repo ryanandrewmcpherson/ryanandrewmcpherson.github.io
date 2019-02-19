@@ -9,6 +9,7 @@ header{
 	align-items: center;
 	padding:20px;
 	margin:20px;
+	border-radius:20px;
 }
 h1{
 	min-width:fit-content;
@@ -30,11 +31,13 @@ h2{
 	width:100%;
 	margin:0px 20px 20px 0px;
 	padding:20px;
+	border-radius:20px;
 }
 .page-width{
 	margin:0px 20px 20px 20px;
 	padding:20px;
 	text-align:center;
+	border-radius:20px;
 }
 
 div.projects{
@@ -48,12 +51,14 @@ div.rep-links{
 	max-width:100%;
 	grid-template-columns:1fr 1fr 1fr 1fr;
 	padding:20px;
+	
 }
 
 article.project{
 	padding:20px;
 	margin:20px;
 	width:1fr;
+	border-radius:20px;
 }
 
 article.project img{
@@ -80,6 +85,7 @@ a{
 
 img.profile{
 	margin:0px 20px 20px 20px;
+	border-radius:20px;
 	
 }
 
@@ -125,6 +131,7 @@ a img:active{
 .technology{
 	padding:5px;
 	margin:5px;
+	border-radius:9px;
 }
 
 
@@ -147,4 +154,7 @@ article.contact{
 h3.contact-info{
 	padding:0px;
 	margin:0px;
+}
+a.screenshot{
+background-color: var(--darkest-color);
 }
