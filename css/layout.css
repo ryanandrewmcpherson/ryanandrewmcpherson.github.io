@@ -1,0 +1,150 @@
+
+
+body{
+	margin:0px;
+}
+header{
+	display:flex;
+	justify-content:space-between;
+	align-items: center;
+	padding:20px;
+	margin:20px;
+}
+h1{
+	min-width:fit-content;
+	padding:10px;
+	display:flex;
+}
+h2{
+	margin-block-start:0px;
+	margin-block-end:0px;
+	text-align: center;
+}
+
+
+.first-row{
+	display:flex;
+}
+
+.partial-page-width{
+	width:100%;
+	margin:0px 20px 20px 0px;
+	padding:20px;
+}
+.page-width{
+	margin:0px 20px 20px 20px;
+	padding:20px;
+	text-align:center;
+}
+
+div.projects{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+div.rep-links{
+	display:grid;
+	max-width:100%;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+	padding:20px;
+}
+
+article.project{
+	padding:20px;
+	margin:20px;
+	width:1fr;
+}
+
+article.project img{
+    width:100%;
+}
+
+
+nav ul{
+	display:inline-flex;
+	list-style-type:none;
+	justify-content:space-around;
+	padding:20px;
+}
+
+nav ul li{
+	padding:0px 20px;
+	min-width:fit-content;
+
+}
+
+a{
+  min-width:fit-content;
+}
+
+img.profile{
+	margin:0px 20px 20px 20px;
+	
+}
+
+img.linkedin{
+	height:48px;
+	width:59px;
+	padding:10px;
+}
+
+img.github{
+	height:48px;
+	width:48px;
+	padding:10px;
+}
+img.gmail{
+	width:48px;
+	height:36px;
+	padding:16px 10px;
+}
+
+img.phone{
+	height: 68px;
+	width: 34px;
+	padding: 0px 10px;
+}
+
+article.icons{
+	padding:20px;
+	display:flex;
+	justify-content:space-around;
+	align-content: center;
+}
+
+
+a img:hover{
+	transform:scale(1.25);
+}
+
+a img:active{
+	transform:scale(1);
+}
+
+.technology{
+	padding:5px;
+	margin:5px;
+}
+
+
+article.contact{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	max-width: 100%;
+}
+
+.ohio{
+ width:40px;
+ height:40px;
+}
+
+.location{
+	display:flex;
+	align-content:flex-end;
+}
+h3.contact-info{
+	padding:0px;
+	margin:0px;
+}
