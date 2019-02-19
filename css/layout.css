@@ -6,7 +6,6 @@ body{
 header div{
 	display:flex;
 	justify-content: center;
-	flex-wrap: wrap;
 	max-width:100%;
 	align-items: center;
 	padding:20px;
