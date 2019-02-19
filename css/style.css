@@ -37,7 +37,7 @@ nav ul{
 }
 
 
-header{
+header div{
 	background-color:var(--header-color);
 	box-shadow: 5px 5px  var(--shadow-color);
 	color:var(--heading-color);
@@ -64,8 +64,8 @@ img.profile{
 
 
 hr{
-	width:100%;
 	border-top:2px solid var(--lightest-color);
+    min-width:384px;
 }
 
 /*article.icons{

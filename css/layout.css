@@ -3,19 +3,31 @@
 body{
 	margin:0px;
 }
-header{
+header div{
 	display:flex;
-	justify-content:space-between;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width:100%;
 	align-items: center;
 	padding:20px;
 	margin:20px;
 	border-radius:20px;
+
+}
+
+hr{
+  display:flex;
+  flex-wrap: wrap;
+  flex-shrink: 5;
 }
 h1{
+	display:flex;
+	flex-wrap: wrap;
 	min-width:fit-content;
 	padding:10px;
-	display:flex;
+	border-radius:20px;
 }
+
 h2{
 	margin-block-start:0px;
 	margin-block-end:0px;
@@ -23,15 +35,18 @@ h2{
 }
 
 
+
 .first-row{
-	display:flex;
+   display:flex;
+ 
 }
 
 .partial-page-width{
-	width:100%;
-	margin:0px 20px 20px 0px;
-	padding:20px;
+	min-width:55.5%;
+	max-width:100%;
+	margin:0px 20px 20px 20px;
 	border-radius:20px;
+	padding:20px;
 }
 .page-width{
 	margin:0px 20px 20px 20px;
@@ -42,6 +57,7 @@ h2{
 
 div.projects{
 	display:grid;
+	max-width:100%;
 	grid-template-columns: 1fr 1fr 1fr;
 
 }
@@ -68,9 +84,12 @@ article.project img{
 
 nav ul{
 	display:inline-flex;
+	flex-wrap: wrap;
 	list-style-type:none;
 	justify-content:space-around;
 	padding:20px;
+	border-radius:20px;
+	width:1fr;
 }
 
 nav ul li{
@@ -85,13 +104,14 @@ a{
 
 img.profile{
 	margin:0px 20px 20px 20px;
+	max-width:100%;
 	border-radius:20px;
 	
 }
 
 img.linkedin{
 	height:48px;
-	width:59px;
+	width:48px;
 	padding:10px;
 }
 
@@ -157,4 +177,7 @@ h3.contact-info{
 }
 a.screenshot{
 background-color: var(--darkest-color);
+}
+p{
+border-radius:20px;
 }
