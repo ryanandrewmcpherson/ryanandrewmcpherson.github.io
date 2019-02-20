@@ -41,11 +41,6 @@ h2{
    flex-wrap: wrap;
  
 }
-@media only screen and (max-width: 600px) {
-  .first-row{
-    flex-direction:column;
-  }
-}
 
 .partial-page-width{
 	min-width:55.5%;
