@@ -21,15 +21,19 @@ body{
 }
 a.technology:link, li a:link{
     color:var(--lightest-color);
+    text-decoration: none;
 }
 a.technology:visited, li a:visited{
 	color:var(--shadow-color);
+	text-decoration: none;
 }
 a.technology:hover, li a:hover{
 	color:var(--darkest-color);
+	text-decoration: none;
 }
 a.technology:active, li a:active{
 	color:var(--header-color);
+	text-decoration: none;
 }
 
 nav ul{
