@@ -5,7 +5,7 @@ body{
 }
 header div{
 	display:flex;
-	justify-content: center;
+	justify-content:space-between;
 	max-width:100%;
 	align-items: center;
 	padding:20px;
@@ -14,11 +14,12 @@ header div{
 
 }
 
-hr{
+/*hr{
   display:flex;
   flex-wrap: wrap;
   flex-shrink: 5;
-}
+}*/
+
 h1{
 	display:flex;
 	flex-wrap: wrap;

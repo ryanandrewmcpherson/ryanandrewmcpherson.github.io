@@ -13,7 +13,7 @@
 
 h1{
 	color:var(--lightest-color);
-	border:2px solid var(--lightest-color);
+	/*border:2px solid var(--lightest-color);*/
 	}
 
 body{
@@ -33,7 +33,7 @@ a.technology:active, li a:active{
 }
 
 nav ul{
-	border:2px solid var(--lightest-color);
+	/*border:2px solid var(--lightest-color);*/
 }
 
 
@@ -63,9 +63,10 @@ img.profile{
 }
 
 
-hr{
+/*hr{
 	border-top:2px solid var(--lightest-color);
-}
+
+}*/
 
 /*article.icons{
 	background-color:var(--header-color);
