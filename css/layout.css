@@ -6,7 +6,7 @@ body{
 header div{
 	display:flex;
 	justify-content:space-between;
-	max-width:100%;
+	flex-wrap: wrap;
 	align-items: center;
 	padding:20px;
 	margin:20px;
@@ -37,7 +37,8 @@ h2{
 
 
 .first-row{
-   display:flex;
+   display:grid;
+   grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
  
 }
 
@@ -58,14 +59,14 @@ h2{
 div.projects{
 	display:grid;
 	max-width:100%;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
 
 }
 
 div.rep-links{
 	display:grid;
 	max-width:100%;
-	grid-template-columns:1fr 1fr 1fr 1fr;
+	grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
 	padding:20px;
 	
 }
@@ -104,7 +105,6 @@ a{
 
 img.profile{
 	margin:0px 20px 20px 20px;
-	max-width:100%;
 	border-radius:20px;
 	
 }
