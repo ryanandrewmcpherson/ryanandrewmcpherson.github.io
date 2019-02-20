@@ -38,12 +38,20 @@ h2{
 
 .first-row{
    display:flex;
-   flex-wrap: wrap;
+ /*  flex-wrap: wrap;*/
  
 }
-
+@media only screen and (max-width: 595px) {
+  
+  .first-row{
+  	display:flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	
+  }
+}
 .partial-page-width{
-	min-width:55.5%;
+	flex-grow:1;
 	max-width:100%;
 	margin:0px 20px 20px 20px;
 	border-radius:20px;
@@ -104,12 +112,14 @@ a{
 }
 
 img.profile{
-	margin:0px 20px 20px 20px;
 	border-radius:20px;
 	max-width:100%;
 	height:auto;
-	height:auto;
 	
+}
+
+.profile-image-box{
+	margin:0px 20px 20px 20px;
 }
 
 img.linkedin{
@@ -162,7 +172,6 @@ article.contact{
 	display:flex;
 	flex-direction:column;
 	justify-content:space-between;
-	max-width: 100%;
 }
 
 .ohio{

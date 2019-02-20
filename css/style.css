@@ -84,9 +84,8 @@ p{
 }
 article.contact{
 	background-image: url(../images/location.PNG);
-	background-size:100%;
-	background-repeat:no-repeat;
-	max-height:556px
+	background-repeat:no-repeat no-repeat;
+	background-position:50% 0%; 
 }
 .contact-info{
 	color:var(--darkest-color);
