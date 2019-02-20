@@ -1,7 +1,9 @@
 
 
 
-
+*{
+ font-family:sans-serif;
+}
 
 :root{
   --darkest-color:#2F2504;
@@ -87,4 +89,11 @@ article.contact{
 	font-size:40px;
 	font-family:sans-serif;
 
+}
+.tech-list-item{
+	list-style-type: none;
+	padding:5px;
+}
+.tech-list{
+	padding:0px;
 }
