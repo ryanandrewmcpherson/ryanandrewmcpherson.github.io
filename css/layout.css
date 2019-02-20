@@ -25,7 +25,6 @@ h1{
 	flex-wrap: wrap;
 	min-width:fit-content;
 	padding:10px;
-	border-radius:20px;
 }
 
 h2{
@@ -41,19 +40,42 @@ h2{
  /*  flex-wrap: wrap;*/
  
 }
-@media only screen and (max-width: 595px) {
+
+@media only screen and (max-width:470px){
+  h1{
+  	text-align:center;
+  }
+}
+
+@media only screen and (max-width: 477px) {
+   nav ul {
+   	flex-direction:column;
+   }
+}
+@media only screen and (max-width: 613px) {
   
   .first-row{
   	display:flex;
   	flex-direction: column;
   	justify-content: center;
-  	
   }
+
+  article.contact{
+    margin:0px 20px 20px 20px;
+  }
+  	
 }
+@media only screen and (max-width: 849px){
+  header div{
+  	justify-content: center;
+  }
+
+}
+
 .partial-page-width{
 	flex-grow:1;
 	max-width:100%;
-	margin:0px 20px 20px 20px;
+	margin:0px 20px 20px 0px;
 	border-radius:20px;
 	padding:20px;
 }
@@ -112,9 +134,10 @@ a{
 }
 
 img.profile{
+	display:block;
 	border-radius:20px;
 	max-width:100%;
-	height:auto;
+	max-height:100%;
 	
 }
 
