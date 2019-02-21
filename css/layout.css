@@ -37,44 +37,11 @@ h2{
 
 .first-row{
    display:flex;
- /*  flex-wrap: wrap;*/
  
-}
-
-@media only screen and (max-width:470px){
-  h1{
-  	text-align:center;
-  }
-}
-
-@media only screen and (max-width: 477px) {
-   nav ul {
-   	flex-direction:column;
-   }
-}
-@media only screen and (max-width: 613px) {
-  
-  .first-row{
-  	display:flex;
-  	flex-direction: column;
-  	justify-content: center;
-  }
-
-  article.contact{
-    margin:0px 20px 20px 20px;
-  }
-  	
-}
-@media only screen and (max-width: 849px){
-  header div{
-  	justify-content: center;
-  }
-
 }
 
 .partial-page-width{
 	flex-grow:1;
-	max-width:100%;
 	margin:0px 20px 20px 0px;
 	border-radius:20px;
 	padding:20px;
@@ -96,7 +63,7 @@ div.projects{
 div.rep-links{
 	display:grid;
 	max-width:100%;
-	grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+	grid-template-columns: repeat( auto-fit, minmax(280px, 1fr) );
 	padding:20px;
 	
 }
@@ -120,7 +87,6 @@ nav ul{
 	justify-content:space-around;
 	padding:20px;
 	border-radius:20px;
-	width:1fr;
 }
 
 nav ul li{
@@ -131,14 +97,17 @@ nav ul li{
 
 a{
   min-width:fit-content;
+  text-decoration: none;
 }
 
 img.profile{
-	display:block;
-	border-radius:20px;
+	display: block;
 	max-width:100%;
 	max-height:100%;
-	
+	border-radius:20px;
+}
+img.profile2{
+	display:none;
 }
 
 .profile-image-box{
@@ -165,29 +134,41 @@ img.gmail{
 img.phone{
 	height: 68px;
 	width: 34px;
-	padding: 0px 10px;
+	padding: 0px 17px;
 }
 
 article.icons{
 	padding:20px;
 	display:flex;
-	justify-content:space-around;
-	align-content: center;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	z-index: 2;
 }
 
 
-a img:hover{
-	transform:scale(1.25);
+a.contact-link:hover{
+	transform:scale(1.25) translate(23px);
 }
 
-a img:active{
+
+
+a.contact-link:active{
 	transform:scale(1);
 }
+
+a.contact-link{
+     width:300px;
+ }
 
 .technology{
 	padding:5px;
 	margin:5px;
 	border-radius:9px;
+}
+.technology:hover{
+	transform: scale(1.25);
 }
 
 
@@ -195,7 +176,10 @@ article.contact{
 	display:flex;
 	flex-direction:column;
 	justify-content:space-between;
+	position:relative;
+	overflow:hidden;
 }
+
 
 .ohio{
  width:40px;
@@ -205,14 +189,153 @@ article.contact{
 .location{
 	display:flex;
 	align-content:flex-end;
+	padding-top:20px;
+	z-index:2;
 }
-h3.contact-info{
+h3.contact-info-2{
 	padding:0px;
 	margin:0px;
 }
-a.screenshot{
-background-color: var(--darkest-color);
+h3.contact-info{
+	padding-left: 10px;
+	margin:0px;
+	width:300px;
+}
+
+.screenshot{
+max-width: 100%;
+border-radius:20px;
+padding:20px;
+}
+.one:hover{
+	transform: scale(2) translateX(25%);
+}
+.two:hover{
+	transform: scale(2);
+}
+.three:hover{
+	transform: scale(2) translateX(-25%);
+}
+.screenshot:active{
+	transform: scale(1);
 }
 p{
 border-radius:20px;
+padding:20px;
+}
+
+.map{
+  position:absolute;
+  align-self: center;
+  top:0;
+  opacity:0.75;
+}
+
+.contact-link{
+	display:flex;
+}
+.contact-link span{
+	display:flex;
+    align-items:center;
+}
+@media only screen and (max-width:1006px){
+	.contact-link{
+		flex-direction:column;
+	}
+	.location{
+		justify-content: center;
+	}
+}
+@media only screen and (max-width: 999px) {
+  
+  .first-row{
+  	display:flex;
+  	flex-direction: column;
+  	justify-content: center;
+  }
+
+  img.profile{
+  	display:none;
+  }
+
+  img.profile2{
+  	display: block;
+	max-width:100%;
+	max-height:100%;
+	border-radius:20px;
+   }
+
+  .profile-image-box{
+  	display:flex;
+  	justify-content: space-around;
+  	align-items: center;
+  	border-radius:20px;
+  	padding:20px;
+  }
+
+  article.contact{
+  	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	position:relative;
+	overflow:hidden;
+    margin:0px 20px 20px 20px;
+  }
+  	
+}
+@media only screen and (max-width: 849px){
+  header div{
+  	justify-content: center;
+  }
+
+}
+@media only screen and (max-width:846px){
+	.two:hover{
+	transform: scale(2) translateX(-25%);
+}
+	.three:hover{
+	transform: scale(2) translateX(25%);
+}
+
+@media only screen and (max-width:596px){
+	.one:hover{
+	transform: scale(1.5);
+}
+	.two:hover{
+	transform: scale(1.5);
+}
+	.three:hover{
+	transform: scale(1.5);
+}
+
+
+}
+
+@media only screen and (max-width:553px){
+	img.profile{
+		display: block;
+		max-width:100%;
+		max-height:100%;
+		border-radius:20px;
+	}
+	img.profile2{
+		display:none;
+	}
+}
+
+@media only screen and (max-width:502px){
+  h1{
+  	text-align:center;
+  }
+}
+
+
+@media only screen and (max-width: 496px) {
+   nav ul {
+   	display:flex;
+   	flex-wrap: nowrap;
+   	justify-content: center;
+   	flex-direction:column;
+   	text-align: center;
+   }
 }

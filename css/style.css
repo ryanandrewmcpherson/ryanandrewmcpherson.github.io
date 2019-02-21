@@ -8,8 +8,8 @@
 :root{
   --darkest-color:#2F2504;
   --lightest-color:#D0DDD7;
-  --header-color:#4B5C60;
-  --section-background-color-1:#7E846B;
+  --header-color:#2F2504;;
+  --section-background-color-1:#4B5C60;
   --shadow-color:#a5ae9e;
 }
 
@@ -19,24 +19,26 @@ h1{
 	}
 
 body{
-    background-color:var(--darkest-color);
+    background-color:var(--lightest-color);
 }
-a.technology:link, li a:link{
+a.technology:link, li a:link, a.contact-link:link{
     color:var(--lightest-color);
     text-decoration: none;
 }
-a.technology:visited, li a:visited{
+a.technology:visited, li a:visited, a.contact-link:visited{
 	color:var(--shadow-color);
 	text-decoration: none;
 }
-a.technology:hover, li a:hover{
-	color:var(--darkest-color);
+a.technology:hover, li a:hover, a.contact-link:hover{
+	color:var(--shadow-color);
 	text-decoration: none;
 }
-a.technology:active, li a:active{
-	color:var(--header-color);
+a.technology:active, li a:active, a.contact-link:active{
+	color:var(--section-background-color-1);
 	text-decoration: none;
 }
+
+
 
 nav ul{
 	/*border:2px solid var(--lightest-color);*/
@@ -44,7 +46,7 @@ nav ul{
 
 
 header div{
-	background-color:var(--header-color);
+	background-color:var(--darkest-color);
 	box-shadow: 5px 5px  var(--shadow-color);
 	color:var(--heading-color);
 }
@@ -59,7 +61,7 @@ article.project{
 	box-shadow: 5px 5px var(--shadow-color);
 }
 footer{
-	background-color:var(--header-color);
+	background-color:var(--darkest-color);
 	color:var(--lightest-color);
 	box-shadow: 5px 5px var(--shadow-color);
 }
@@ -79,12 +81,15 @@ p{
   background-color:var(--header-color);
   box-shadow: 5px 5px var(--shadow-color);
 }
-article.contact{
-	background-image: url(../images/location.PNG);
-	background-repeat:no-repeat no-repeat;
-	background-position:50% 0%; 
-}
+
 .contact-info{
+	color:var(--lightest-color);
+	font-size:40px;
+	font-family:sans-serif;
+}
+
+
+.contact-info-2{
 	color:var(--darkest-color);
 	font-size:40px;
 	font-family:sans-serif;
@@ -96,4 +101,28 @@ article.contact{
 }
 .tech-list{
 	padding:0px;
+}
+
+.icons{
+	background-color:#4B5C60AD;
+}
+
+
+.screenshot{
+	background-color: var(--section-background-color-1);
+	box-shadow: 5px 5px var(--shadow-color);
+}
+
+@media only screen and (max-width: 999px) {
+
+  .profile-image-box{
+  	background-color:var(--section-background-color-1);
+  	box-shadow: 5px 5px var(--shadow-color);
+  }
+
+  img.profile{
+  	box-shadow:none;
+  }
+
+
 }
