@@ -7,10 +7,11 @@
 
 :root{
   --darkest-color:#2F2504;
+  --darkest-color-semi-transparent:rgba(47,37,4,0.9);
   --lightest-color:#D0DDD7;
   --header-color:#2F2504;;
-  --section-background-color-1:#4B5C60;
-  --shadow-color:#a5ae9e;
+  --section-background-color-1:rgba(75,92,96,0.9);
+  --shadow-color:rgba(165,174,158,0.9);
 }
 
 h1{
@@ -19,7 +20,12 @@ h1{
 	}
 
 body{
-    background-color:var(--lightest-color);
+	background-color:#D0DDD7;
+	background-image: radial-gradient(closest-side, transparent 98%, rgba(47,37,4,0.9) 99%),
+	radial-gradient(closest-side, transparent 98%, rgba(47,37,4,0.9) 99%);
+	background-size:80px 80px;
+	background-position:0 0, 40px 40px;
+	background-attachment: fixed;
 }
 a.technology:link, li a:link, a.contact-link:link{
     color:var(--lightest-color);
@@ -46,7 +52,7 @@ nav ul{
 
 
 header div{
-	background-color:var(--darkest-color);
+	background-color:var(--darkest-color-semi-transparent);
 	box-shadow: 5px 5px  var(--shadow-color);
 	color:var(--heading-color);
 }
@@ -57,11 +63,11 @@ section.section-box-style, article.section-box-style{
 	box-shadow: 5px 5px var(--shadow-color);
 }
 article.project{
-	background-color:var(--header-color);
+	background-color:var(--darkest-color-semi-transparent);
 	box-shadow: 5px 5px var(--shadow-color);
 }
 footer{
-	background-color:var(--darkest-color);
+	background-color:var(--darkest-color-semi-transparent);
 	color:var(--lightest-color);
 	box-shadow: 5px 5px var(--shadow-color);
 }
@@ -73,12 +79,12 @@ img.profile{
 
 
 .technology{
-	background-color:var(--header-color);
+	background-color:var(--darkest-color-semi-transparent);
 	box-shadow: 5px 5px var(--shadow-color);
 }
 
 p{
-  background-color:var(--header-color);
+  background-color:var(--darkest-color-semi-transparent);
   box-shadow: 5px 5px var(--shadow-color);
 }
 
@@ -90,7 +96,7 @@ p{
 
 
 .contact-info-2{
-	color:var(--darkest-color);
+	color:var(--darkest-color-semi-transparent);
 	font-size:40px;
 	font-family:sans-serif;
 
@@ -116,7 +122,6 @@ p{
 @media only screen and (max-width: 999px) {
 
   .profile-image-box{
-  	background-color:var(--section-background-color-1);
   	box-shadow: 5px 5px var(--shadow-color);
   }
 

@@ -105,6 +105,7 @@ img.profile{
 	max-width:100%;
 	max-height:100%;
 	border-radius:20px;
+	opacity: 0.9;
 }
 img.profile2{
 	display:none;
@@ -263,6 +264,7 @@ padding:20px;
 	max-width:100%;
 	max-height:100%;
 	border-radius:20px;
+	opacity: 0.9;
    }
 
   .profile-image-box{
@@ -270,7 +272,6 @@ padding:20px;
   	justify-content: space-around;
   	align-items: center;
   	border-radius:20px;
-  	padding:20px;
   }
 
   article.contact{
@@ -317,6 +318,7 @@ padding:20px;
 		max-width:100%;
 		max-height:100%;
 		border-radius:20px;
+		opacity: 0.9;
 	}
 	img.profile2{
 		display:none;
