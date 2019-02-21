@@ -62,6 +62,10 @@ section.section-box-style, article.section-box-style{
 	color:var(--lightest-color);
 	box-shadow: 5px 5px var(--shadow-color);
 }
+article.contact{
+	color:var(--lightest-color);
+	box-shadow: 5px 5px var(--shadow-color);
+}
 article.project{
 	background-color:var(--darkest-color-semi-transparent);
 	box-shadow: 5px 5px var(--shadow-color);
