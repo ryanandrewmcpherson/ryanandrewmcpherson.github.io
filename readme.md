@@ -1,0 +1,3 @@
+# Profile 
+
+### A very responsive webpage about me that arranges itself well to any browser window size. It should have a fixed background on desktop browsers to give it a frosted glass over wallpaper kind of a feel, however, this feature doesn't work for mobile browsers due to the fact that the same mechanism is used for navigating and pointing. Will be exploring options to make it work in mobile browsers.
