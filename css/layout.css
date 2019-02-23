@@ -243,6 +243,9 @@ padding:20px;
 	.contact-link{
 		flex-direction:column;
 	}
+	.contact-link span{
+		padding-left:10px;
+	}
 	.location{
 		justify-content: center;
 	}
