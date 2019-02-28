@@ -114,7 +114,7 @@ p{
 }
 
 .icons{
-	background-color:#4B5C60AD;
+	background-color:var(--section-background-color-1);
 }
 
 
