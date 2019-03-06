@@ -19,6 +19,14 @@ h1{
 	/*border:2px solid var(--lightest-color);*/
 	}
 
+.header-div{
+	background:transparent;
+	padding:0px;
+	margin:0px;
+	box-shadow:none;
+	border-radius:0px;
+}
+
 body{
 	background-color:#D0DDD7;
 	background-image: radial-gradient(closest-side, transparent 98%, rgba(47,37,4,0.9) 99%),
@@ -43,13 +51,6 @@ a.technology:active, li a:active, a.contact-link:active{
 	color:var(--section-background-color-1);
 	text-decoration: none;
 }
-
-
-
-nav ul{
-	/*border:2px solid var(--lightest-color);*/
-}
-
 
 header div{
 	background-color:var(--darkest-color-semi-transparent);
@@ -132,6 +133,17 @@ p{
   img.profile{
   	box-shadow:none;
   }
+@media only screen and (max-width:596px){
 
+	.hamburger{
+		color:var(--lightest-color);
+		background: transparent;
+		font-size:2em;
+	}
+	.hamburger:hover{
+		color:var(--darkest-color);
+		background-color: var(--lightest-color);
+	}
+}
 
 }

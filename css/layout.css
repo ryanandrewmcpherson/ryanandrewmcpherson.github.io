@@ -14,11 +14,6 @@ header div{
 
 }
 
-/*hr{
-  display:flex;
-  flex-wrap: wrap;
-  flex-shrink: 5;
-}*/
 
 h1{
 	display:flex;
@@ -239,6 +234,10 @@ padding:20px;
 	display:flex;
     align-items:center;
 }
+
+.hamburger{
+	display:none;
+}
 @media only screen and (max-width:1006px){
 	.contact-link{
 		flex-direction:column;
@@ -287,7 +286,7 @@ padding:20px;
   }
   	
 }
-@media only screen and (max-width: 849px){
+@media only screen and (max-width: 989px){
   header div{
   	justify-content: center;
   }
@@ -302,6 +301,30 @@ padding:20px;
 }
 
 @media only screen and (max-width:596px){
+
+.topnav #myLinks{
+	display:none;
+}
+
+.topnav a:icon{
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+nav ul li{
+	text-align: center;
+}
+
+.hamburger{
+	display:block;
+	padding-right:10px;
+	padding-left:10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	border-radius:10px;
+}
 	.one:hover{
 	transform: scale(1.5);
 }
