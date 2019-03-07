@@ -124,6 +124,31 @@ p{
 	box-shadow: 5px 5px var(--shadow-color);
 }
 
+.modal-content{
+	background-color:var(--section-background-color-1);
+}
+
+.close {
+  color: var(--shadow-color);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--darkest-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#myBtn{
+	background-color: var(--darkest-color);
+	color:var(--lightest-color);
+	border:none;
+	box-shadow: 5px 5px var(--shadow-color);
+}
+
 @media only screen and (max-width: 999px) {
 
   .profile-image-box{
