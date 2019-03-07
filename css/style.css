@@ -156,11 +156,13 @@ p{
 }
 
 .prev:hover, .next:hover {
-  background-color: var(--darkest-color);
+  background-color: var(--darkest-color-semi-transparent);
 }
 
 .text{
 	color: var(--lightest-color);
+	background-color:var(--darkest-color-semi-transparent);
+	box-shadow: 5px 5px var(--shadow-color);
 }
 
 .numbertext{
