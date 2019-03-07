@@ -203,18 +203,23 @@ max-width: 100%;
 border-radius:20px;
 padding:20px;
 }
+
 .one:hover{
 	transform: scale(2) translateX(25%);
 }
+
 .two:hover{
 	transform: scale(2);
 }
+
 .three:hover{
 	transform: scale(2) translateX(-25%);
 }
+
 .screenshot:active{
 	transform: scale(1);
 }
+
 p{
 border-radius:20px;
 padding:20px;
@@ -256,6 +261,7 @@ padding:20px;
 .modal-content {
 	border-radius:20px;
 	padding: 20px; 
+	margin:20px;
 	height:fit-content;
 }
 
