@@ -181,6 +181,19 @@ p{
 	box-shadow: 5px 5px var(--shadow-color);
 }
 
+.collapsible{
+	background-color:transparent;
+	color: var(--lightest-color);
+}
+
+.collapsible:hover {
+  background-color: var(--shadow-color);
+}
+
+.tech-list{
+	background-color:transparent;
+}
+
 @media only screen and (max-width: 999px) {
 
   .profile-image-box{

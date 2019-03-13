@@ -27,7 +27,6 @@ h2{
 }
 
 
-
 .first-row{
    display:flex;
  
@@ -371,6 +370,34 @@ padding:20px;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
+}
+
+.description{
+	display:flex;
+	justify-content: center;
+}
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  cursor: pointer;
+	width: fit-content;
+	height:fit-content;
+	align-self:center;
+	padding:0px;
+  border: none;
+  text-align: left;
+	outline: none;
+	border-radius:20px;
+	font-size:1.5em;
+	padding-left:7px;
+	padding-right:7px;
+	margin-left:5px;
+}
+
+
+.tech-list {
+	margin:0px;
+  display: none;
+  overflow: hidden;
 }
 
 @-webkit-keyframes fade {

@@ -60,3 +60,18 @@ function showSlides(n) {
   slides[slideIndex-1].style.justifyContent = "center"; 
   dots[slideIndex-1].className += " active";
 }
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (let i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var techList = document.getElementsByClassName("tech-list")[i];
+    if (techList.style.display === "block") {
+      techList.style.display = "none";
+    } else {
+      techList.style.display = "block";
+    }
+  });
+}
