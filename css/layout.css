@@ -17,6 +17,10 @@ grid-column:1/2;
 z-index:0;
 }
 
+.bubbles{
+z-index:11 !important;
+}
+
 
 header div{
 	display:flex;

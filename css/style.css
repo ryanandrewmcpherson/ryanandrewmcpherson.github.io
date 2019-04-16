@@ -27,14 +27,14 @@
 }
 
 body{
-	background-color:#D0DDD7;
+	/*background-color:#D0DDD7;
 	background-image: radial-gradient(closest-side, var(--darkest-color-semi-transparent) 20%, transparent 21%),
 	radial-gradient(closest-side, var(--section-background-color-1) 20%, transparent 21%);
 	background-size:500px 500px;
 	background-position:fixed;
   background-position:0 0, 10px 10px;
 	transition:background-position 100ms;
-	/*animation: background 10s linear infinite;*/
+	animation: background 10s linear infinite;*/
 }
 
 a.technology:link, li a:link, a.contact-link:link{
