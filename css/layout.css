@@ -1,6 +1,23 @@
 body{
 	margin:0px;
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows:1fr;
 }
+
+#container{
+grid-row:1/2;
+grid-column:1/2;
+z-index:10;
+}
+
+#background{
+grid-row:1/2;
+grid-column:1/2;
+z-index:0;
+}
+
+
 header div{
 	display:flex;
 	justify-content:space-between;
@@ -18,6 +35,7 @@ h1{
 	flex-wrap: wrap;
 	min-width:fit-content;
 	padding:10px;
+	margin:0px;
 }
 
 h2{
@@ -145,6 +163,7 @@ article.icons{
 
 a.contact-link:hover{
 	transform:scale(1.25) translate(23px);
+	transition:1s;
 }
 
 
@@ -205,18 +224,22 @@ padding:20px;
 
 .one:hover{
 	transform: scale(2) translateX(25%);
+	transition:1s;
 }
 
 .two:hover{
 	transform: scale(2);
+	transition:1s;
 }
 
 .three:hover{
 	transform: scale(2) translateX(-25%);
+	transition:1s;
 }
 
 .screenshot:active{
 	transform: scale(1);
+	transition:1s;
 }
 
 p{
@@ -289,6 +312,7 @@ padding:20px;
 
 #myBtn:hover{
 	transform:scale(1.25);
+	transition:1s;
 }
 #myBtn:active{
 	transform:scale(1);
@@ -367,9 +391,9 @@ padding:20px;
 
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 2s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
 }
 
 .description{
@@ -409,6 +433,7 @@ padding:20px;
   from {opacity: .4} 
   to {opacity: 1}
 }
+
 
 @media only screen and (max-width:1006px){
 	.contact-link{
@@ -479,8 +504,26 @@ padding:20px;
 
 @media only screen and (max-width:596px){
 
-	.topnav #myLinks{
-		display:none;
+	.topnav{
+		height:fit-content;
+	}
+
+	#myLinks{
+		display:flex;
+		align-content: center;
+		height:0px;
+		margin:0px;
+		padding:0px;
+		overflow:hidden;
+		transition:height 1s ease-in-out;
+	}
+
+	#myLinks li{
+		height:fit-content;
+	}
+
+	#myLinks li a{
+    height: fit-content;
 	}
 
 	.topnav a:icon{
@@ -511,9 +554,11 @@ padding:20px;
 	}
 		.two:hover{
 		transform: scale(1.5);
+		
 	}
 		.three:hover{
 		transform: scale(1.5);
+		
 	}
 }
 

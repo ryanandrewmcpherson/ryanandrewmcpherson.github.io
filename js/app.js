@@ -1,11 +1,48 @@
-function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
+
+
+
+var myLinks = document.getElementById("myLinks");
+var myLinksHeight;
+
+
+function myFunction() {  
+    if(window.matchMedia("(max-Width:596px)").matches){
+      myLinksHeight = "40px";
+      console.log(myLinksHeight);
     }
+    if(window.matchMedia("(max-Width:496px)").matches){
+      myLinksHeight = "95.2px";
+      console.log(myLinksHeight);
+    }
+    if (myLinks.style.height === "0px" || myLinks.style.height === "") {
+      myLinks.style.height = myLinksHeight;
+    } else {
+      myLinks.style.height = "0px";
+      myLinks.style.padding = "0px";
+    }
+}
+
+if(window.matchMedia("(min-Width:596px)").matches){
+   myLinks.style = "null";
+}
+
+const originalResize = evt => {
+  console.log(window.innerWidth);
+  if(window.matchMedia("(max-Width:596px)").matches && window.matchMedia("(min-width:497px)").matches){
+    myLinksHeight = "40px";
+    console.log(myLinksHeight);
   }
+  if(window.matchMedia("(max-Width:496px)").matches){
+    myLinksHeight = "95.2px";
+    console.log(myLinksHeight);
+  }
+  if(myLinks.style.height > 0){
+  myLinks.style.height = myLinksHeight;
+  }
+};
+const delay = 100;
+
+window.addEventListener("resize",originalResize)
 
 var modal = document.getElementById('myModal');
 
@@ -24,7 +61,6 @@ span.onclick = function() {
 }
 
 window.onclick = function(event) {
-    
   if (event.target == modal) {
     modal.style.display = "none";
   }
@@ -75,3 +111,40 @@ for (let i = 0; i < coll.length; i++) {
     }
   });
 }
+
+
+/*
+var i;
+var lastI;
+var lastJ;
+var j;
+
+document.addEventListener("mousemove",function(event){
+  i = event.clientX;
+  j = event.clientY;
+}); */
+
+
+
+
+/* window.setInterval(function(){
+  console.log(i);
+  console.log(j);
+  x = 10;
+  var oldX = getComputedStyle(document.querySelector("body")).backgroundPositionX;
+  var oldXArr = oldX.split(",",2);
+  var y = 500*Math.sin(parseInt(oldXArr[0])/100);
+  var oldY= getComputedStyle(document.querySelector("body")).backgroundPositionY;
+  var oldYArr = oldY.split(",",2);
+
+  if(j === lastJ && i === lastI){
+    document.querySelector("body").style.backgroundPositionX = (parseInt(oldXArr[0]) + x) + "px, " + (parseInt(oldXArr[1]) - x) + "px";
+    document.querySelector("body").style.backgroundPositionY = (y-(j)) + "px, " + (y + 250 +(j)) + "px";
+
+  }else{
+  document.querySelector("body").style.backgroundPositionX = (parseInt(oldXArr[0]) + x + (i - parseInt(oldXArr[0]))) + "px, " + (parseInt(oldXArr[1]) - x - (i - parseInt(oldXArr[0]))) + "px";
+  document.querySelector("body").style.backgroundPositionY = (y-(j)) + "px, " + (y + 250 + (j)) + "px";
+  }
+  lastI = i;
+  lastJ = j
+},100) */

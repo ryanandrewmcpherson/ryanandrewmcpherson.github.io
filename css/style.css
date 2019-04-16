@@ -2,7 +2,7 @@
   --darkest-color:#2F2504;
   --darkest-color-semi-transparent:rgba(47,37,4,0.9);
   --lightest-color:#D0DDD7;
-  --header-color:#2F2504;;
+  --header-color:#2F2504;
   --section-background-color-1:rgba(75,92,96,0.9);
   --shadow-color:rgba(165,174,158,0.9);
 }
@@ -19,22 +19,31 @@
 	margin:0px;
 	box-shadow:none;
 	border-radius:0px;
+	
+}
+
+#background{
+ background-color:var(--lightest-color);
 }
 
 body{
 	background-color:#D0DDD7;
-	background-image: radial-gradient(closest-side, transparent 98%, rgba(47,37,4,0.9) 99%),
-	radial-gradient(closest-side, transparent 98%, rgba(47,37,4,0.9) 99%);
-	background-size:80px 80px;
-	background-position:0 0, 40px 40px;
-	background-attachment: fixed;
+	background-image: radial-gradient(closest-side, var(--darkest-color-semi-transparent) 20%, transparent 21%),
+	radial-gradient(closest-side, var(--section-background-color-1) 20%, transparent 21%);
+	background-size:500px 500px;
+	background-position:fixed;
+  background-position:0 0, 10px 10px;
+	transition:background-position 100ms;
+	/*animation: background 10s linear infinite;*/
 }
+
 a.technology:link, li a:link, a.contact-link:link{
     color:var(--lightest-color);
     text-decoration: none;
 }
 a.technology:visited, li a:visited, a.contact-link:visited{
-	color:var(--shadow-color);
+	color:var(--lightest-color);
+	text-shadow: 2px 2px var(--lightest-color);
 	text-decoration: none;
 }
 a.technology:hover, li a:hover, a.contact-link:hover{
@@ -192,6 +201,28 @@ p{
 
 .tech-list{
 	background-color:transparent;
+}
+@keyframes background{
+	0%{
+	background-position:0 0, 10px 10px;
+	
+	}
+	25%{
+		background-position:0 10px, 10px 0px;	
+
+	}
+	50%{
+		background-position:-10px 10px, 20px 0px;
+	
+	}
+	75%{
+		background-position:-10px 0, 20px 10px;
+	
+	}
+	100%{
+		background-position:0 0, 10px 10px;
+	  
+		}
 }
 
 @media only screen and (max-width: 999px) {
