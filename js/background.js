@@ -6,7 +6,7 @@ background.width = parseInt(window.getComputedStyle(document.querySelector("body
 document.querySelector("body").appendChild(background);
 
 
-let numCircles = 3;
+let numCircles = 100;
 let interval = 1000/30;
 let xA;
 let yA;
