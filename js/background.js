@@ -129,6 +129,8 @@ let mouseclickX = null;
 let mouseclickY = null; 
 
 document.addEventListener("click",function(event){
+
+    
     mouseclickX = event.pageX;
     mouseclickY = event.pageY;
 
@@ -136,4 +138,14 @@ document.addEventListener("click",function(event){
       mouseclickX = event.touches[0].pageX;
       mouseclickY = event.touches[0].pageY;
     }
+
+    event.preventDefault();
+})
+
+document.addEventListener("mousedonw",function(event){
+    event.preventDefault();
+})
+
+document.addEventListener("mousemove",function(event){
+    event.preventDefault();
 })
