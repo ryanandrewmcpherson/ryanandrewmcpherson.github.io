@@ -152,7 +152,7 @@ document.addEventListener("click",function(event){
     event.preventDefault();
 })
 
-document.addEventListener("mousedonw",function(event){
+document.addEventListener("mousedown",function(event){
     event.preventDefault();
 })
 
