@@ -1,3 +1,4 @@
+
 body{
 	margin:0px;
 	display:grid;
@@ -6,6 +7,7 @@ body{
 }
 
 #container{
+display:grid;
 grid-row:1/2;
 grid-column:1/2;
 z-index:10;
@@ -49,10 +51,8 @@ h2{
 	text-align: center;
 }
 
-
 .first-row{
    display:flex;
- 
 }
 
 .partial-page-width{
@@ -81,7 +81,7 @@ div.projects{
 div.rep-links{
 	display:grid;
 	max-width:100%;
-	grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+	grid-template-columns: repeat( auto-fit, minmax(280px, 1fr) );
 	gap:10px;
 	
 }
@@ -165,7 +165,7 @@ article.icons{
 	padding:20px;
 	display:grid;
 	grid-template-rows:max-content 1fr 1fr 1fr 1fr;
-	grid-template-columns: 0.5fr 1fr 0.5fr;
+	grid-template-columns: minmax(0.1fr,0.5fr) 1fr minmax(0.1fr,0.5fr);
 	border-radius: 20px;
 	z-index: 2;
 }
@@ -197,7 +197,9 @@ a.contact-link:active{
 
 
 article.contact{
-	display:grid;
+	display:flex;
+	flex-direction:column;
+	justify-content: space-between;
 	position:relative;
 	overflow:hidden;
 }
@@ -608,6 +610,32 @@ padding:20px;
 	 .contact-link{
 		 font-size:12px;
 	 }
+	 .description{
+		 font-size:12px;
+	 }
+
+	 #Technology{
+		 font-size:20px;
+	 }
+	 .technology{
+		 font-size:12px;
+		 
+	 }
 	 
-} 
+
+	 .ohio{
+		 width:20px;
+		 height:20px;
+		 align-self: flex-end;
+	 }
+	 .contact-info-2{
+		 font-size:20px;
+		 height:fit-content;
+		 align-self: flex-end;
+	 }
+
+	 div.rep-links{
+		grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+	 }
+	 
 }

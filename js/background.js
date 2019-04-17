@@ -108,6 +108,7 @@ for(let i = 0;i<sizeA.length;i++){
     else{
         mouseclickX = null;
         mouseclickY = null;
+        window.alert("Congratulations! You Popped All The Bubbles!");
         definecircles();
         break;
     }  
