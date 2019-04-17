@@ -133,16 +133,21 @@ window.addEventListener("resize",function(){
 let mouseclickX = null;
 let mouseclickY = null; 
 
+document.addEventListener("touchstart",{function(event){
+    mouseclickX = event.touches[0].pageX;
+    mouseclickY = event.touches[0].pageY;
+
+    event.preventDefault();
+   }
+})
+
+
+
 document.addEventListener("click",function(event){
 
     
     mouseclickX = event.pageX;
     mouseclickY = event.pageY;
-
-    if(event.touches != null){
-      mouseclickX = event.touches[0].pageX;
-      mouseclickY = event.touches[0].pageY;
-    }
 
     event.preventDefault();
 })
