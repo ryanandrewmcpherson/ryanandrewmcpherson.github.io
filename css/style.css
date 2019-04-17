@@ -22,7 +22,7 @@
 	
 }
 
-#background{
+#background,#background2{
  background-color:var(--lightest-color);
 }
 

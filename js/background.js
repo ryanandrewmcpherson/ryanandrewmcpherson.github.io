@@ -119,15 +119,15 @@ for(let i = 0;i<sizeA.length;i++){
 
 
 window.addEventListener("resize",function(){
-  document.querySelector("body").removeChild(background);
-  background.height = parseInt(window.getComputedStyle(document.querySelector("body")).height);
-  background.width = parseInt(window.getComputedStyle(document.querySelector("body")).width);
-  document.querySelector("body").appendChild(background);
+
+        document.querySelector("body").removeChild(background);
+        background.height =  parseInt(window.getComputedStyle(document.querySelector("body")).height);
+        background.width = parseInt(window.getComputedStyle(document.querySelector("body")).width);
+        document.querySelector("body").addChild(background);
+        
+   
 });
 
-function resize (){
-    
-}
 
 
 let mouseclickX = null;
