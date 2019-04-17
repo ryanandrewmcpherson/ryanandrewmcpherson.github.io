@@ -7,7 +7,7 @@ document.querySelector("body").appendChild(background);
 
 
 let numCircles = 100;
-let interval = 1000/30;
+let interval = 1000/120;
 let xA;
 let yA;
 let vXA;
@@ -32,11 +32,11 @@ function definecircles(){
         
         
         let x;
-        x = Math.floor(Math.random()*(background.width + 1 - 2*size)) + size;
+        x = Math.floor(Math.random()*(parseInt(window.getComputedStyle(document.querySelector("body")).height) + 1 - 2*size)) + size;
         xA.push(x);
         console.log(xA.indexOf(x));
         let y;
-        y = Math.floor(Math.random()*(background.height + 1 - 2*size)) + size;
+        y = Math.floor(Math.random()*(parseInt(window.getComputedStyle(document.querySelector("body")).height) + 1 - 2*size)) + size;
         yA.push(y);
 
         
@@ -125,6 +125,10 @@ window.addEventListener("resize",function(){
   document.querySelector("body").appendChild(background);
 });
 
+function resize (){
+    
+}
+
 
 let mouseclickX = null;
 let mouseclickY = null; 
@@ -150,3 +154,6 @@ document.addEventListener("mousedonw",function(event){
 document.addEventListener("mousemove",function(event){
     event.preventDefault();
 })
+
+var start = null;
+
