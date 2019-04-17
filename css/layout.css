@@ -19,11 +19,7 @@ grid-row:1/2;
 grid-column:1/2;
 z-index:5;
 }
-#background2{
-grid-row:1/2;
-grid-column:1/2;
-z-index:6;
-}
+
 .front{
 z-index:7 !important;
 }
