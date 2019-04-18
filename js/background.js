@@ -73,10 +73,10 @@ for(let i = 0;i<sizeA.length;i++){
 
     
 
-    if(xA[i] >= background.width || xA[i]  <= 0){
+    if(xA[i] >= background.width - 25 || xA[i]  <= 25){
         vXA[i] = vXA[i]*-1;
     }
-    if(yA[i] >= background.height || yA[i]  <= 0){
+    if(yA[i] >= background.height - 25  || yA[i]  <= 25){
         vYA[i] = vYA[i]*-1;
     }
     
