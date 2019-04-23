@@ -8,11 +8,10 @@ var myLinksHeight;
 function myFunction() {  
     if(window.matchMedia("(max-Width:596px)").matches){
       myLinksHeight = "40px";
-      console.log(myLinksHeight);
     }
     if(window.matchMedia("(max-Width:496px)").matches){
       myLinksHeight = "95.2px";
-      console.log(myLinksHeight);
+     
     }
     if (myLinks.style.height === "0px" || myLinks.style.height === "") {
       myLinks.style.height = myLinksHeight;
@@ -40,7 +39,7 @@ const originalResize = evt => {
   myLinks.style.height = myLinksHeight;
   }
 };
-const delay = 100;
+
 
 window.addEventListener("resize",originalResize)
 
