@@ -1,244 +1,28 @@
-:root{
-  --darkest-color:#2F2504;
-  --darkest-color-semi-transparent:rgba(47,37,4,0.9);
-  --lightest-color:#D0DDD7;
-  --header-color:#2F2504;
-  --section-background-color-1:rgba(75,92,96,0.9);
-  --shadow-color:rgba(165,174,158,0.9);
-}
-
-
-*{
- font-family:sans-serif;
- color:var(--lightest-color);
-}
 
 .header-div{
-	background:transparent;
 	padding:0px;
 	margin:0px;
 	box-shadow:none;
 	border-radius:0px;
-	
-}
-
-#background{
- background-color:var(--lightest-color);
-}
-
-
-a{
-	text-decoration:none;
-}
-
-a.technology:link, li a:link, a.contact-link:link{
-    color:var(--lightest-color);
-    text-decoration: none;
-}
-a.technology:visited, li a:visited, a.contact-link:visited{
-	color:var(--lightest-color);
-	text-shadow: 2px 2px var(--lightest-color);
-	text-decoration: none;
-}
-a.technology:hover, li a:hover, a.contact-link:hover{
-	color:var(--shadow-color);
-	text-decoration: none;
-}
-a.technology:active, li a:active, a.contact-link:active{
-	color:var(--section-background-color-1);
-	text-decoration: none;
-}
-
-header div{
-	background-color:var(--darkest-color-semi-transparent);
-	box-shadow: 5px 5px  var(--shadow-color);
-}
-
-section.section-box-style, article.section-box-style{
-	background-color:var(--section-background-color-1);
-	color:var(--lightest-color);
-	box-shadow: 5px 5px var(--shadow-color);
-}
-article.contact{
-	color:var(--lightest-color);
-	box-shadow: 5px 5px var(--shadow-color);
-}
-article.project{
-	background-color:var(--darkest-color-semi-transparent);
-	box-shadow: 5px 5px var(--shadow-color);
-}
-footer{
-	background-color:var(--darkest-color-semi-transparent);
-	color:var(--lightest-color);
-	box-shadow: 5px 5px var(--shadow-color);
-}
-
-img.profile{
-	box-shadow: 5px 5px var(--shadow-color);
 }
 
 
 
-.technology{
-	background-color:var(--darkest-color-semi-transparent);
-	box-shadow: 5px 5px var(--shadow-color);
-}
-
-p{
-  background-color:var(--darkest-color-semi-transparent);
-  box-shadow: 5px 5px var(--shadow-color);
-}
-
-.contact-info{
-	color:var(--lightest-color);
-	font-size:40px;
-	font-family:sans-serif;
-}
-
-
-.contact-info-2{
-	color:var(--darkest-color-semi-transparent);
-	font-size:40px;
-	font-family:sans-serif;
-
-}
 .tech-list-item{
-	list-style-type: none;
 	padding:5px;
 }
 .tech-list{
 	padding:0px;
 }
 
-.icons{
-	background-color:var(--section-background-color-1);
-}
-
-
-.screenshot{
-	background-color: var(--section-background-color-1);
-	box-shadow: 5px 5px var(--shadow-color);
-}
-
-.modal{
-	background-color: rgb(0,0,0); 
-	background-color: rgba(0,0,0,0); 
-}
-
-
-.modal-content{
-	background-color:var(--section-background-color-1);
-	box-shadow: 5px 5px var(--shadow-color);
-}
-
-.close {
-  color: var(--shadow-color);
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: var(--darkest-color);
-  text-decoration: none;
-  cursor: pointer;
-}
-
 #myBtn{
-	background-color: var(--darkest-color);
-	color:var(--lightest-color);
 	border:none;
-	box-shadow: 5px 5px var(--shadow-color);
 }
 
 
-.prev, .next{
-	color: var(--lightest-color);
-  font-weight: bold;
-  font-size: 18px;
-}
 
-.prev:hover, .next:hover {
-  background-color: var(--darkest-color-semi-transparent);
-}
 
-.text{
-	color: var(--lightest-color);
-	background-color:var(--darkest-color-semi-transparent);
-	box-shadow: 5px 5px var(--shadow-color);
-}
 
-.numbertext{
-	color: var(--lighest-color);
-}
 
-.dot{
-	background-color:var(--lightest-color);
-}
 
-.active, .dot:hover {
-  background-color: var(--shadow-color);
-}
 
-.slideshow-image{
-	box-shadow: 5px 5px var(--shadow-color);
-}
-
-.collapsible{
-	background-color:transparent;
-	color: var(--lightest-color);
-}
-
-.collapsible:hover {
-  background-color: var(--shadow-color);
-}
-
-.tech-list{
-	background-color:transparent;
-}
-@keyframes background{
-	0%{
-	background-position:0 0, 10px 10px;
-	
-	}
-	25%{
-		background-position:0 10px, 10px 0px;	
-
-	}
-	50%{
-		background-position:-10px 10px, 20px 0px;
-	
-	}
-	75%{
-		background-position:-10px 0, 20px 10px;
-	
-	}
-	100%{
-		background-position:0 0, 10px 10px;
-	  
-		}
-}
-
-@media only screen and (max-width: 999px) {
-
-  .profile-image-box{
-  	box-shadow: 5px 5px var(--shadow-color);
-  }
-
-  img.profile{
-  	box-shadow:none;
-  }
-@media only screen and (max-width:596px){
-
-	.hamburger:link{
-		color:var(--lightest-color);
-		background: transparent;
-		font-size:2em;
-	}
-	.hamburger i:hover{
-		color:var(--darkest-color);
-		background-color: var(--lightest-color);
-	}
-}
-
-}

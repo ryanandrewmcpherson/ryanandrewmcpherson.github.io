@@ -1,0 +1,45 @@
+#background{
+    background-color:var(--lightest-color);
+}
+
+header div, 
+article.project,
+footer,
+.technology,
+p,
+#myBtn, 
+.prev:hover, 
+.next:hover, 
+.text {
+	background-color:var(--darkest-color-semi-transparent);
+}
+
+section.section-box-style, 
+article.section-box-style, 
+.icons, 
+.screenshot,
+.modal-content{
+	background-color:var(--section-background-color-1);
+}
+
+.dot,
+ .collapsible{
+	background-color:var(--lightest-color);
+}
+
+.active, 
+.dot:hover, 
+.collapsible:hover {
+  background-color: var(--shadow-color);
+}
+
+.collapsible,
+.tech-list,
+.header-div{
+	background-color:transparent;
+}
+
+.modal{
+	background-color: rgb(0,0,0); 
+	background-color: rgba(0,0,0,0); 
+}

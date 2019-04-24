@@ -1,0 +1,8 @@
+:root{
+    --darkest-color:#2F2504;
+    --darkest-color-semi-transparent:rgba(47,37,4,0.9);
+    --lightest-color:#D0DDD7;
+    --header-color:#2F2504;
+    --section-background-color-1:rgba(75,92,96,0.9);
+    --shadow-color:rgba(165,174,158,0.9);
+  }

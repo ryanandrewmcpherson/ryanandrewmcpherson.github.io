@@ -1,0 +1,45 @@
+.contact-info-2{
+  color:var(--darkest-color-semi-transparent)
+}
+
+a.technology:hover, 
+li a:hover, 
+a.contact-link:hover{
+	color:var(--shadow-color);
+}
+
+a.technology:active, 
+li a:active, 
+a.contact-link:active{
+	color:var(--section-background-color-1);
+}
+
+a.technology:visited, 
+li a:visited, 
+a.contact-link:visited{
+	text-shadow: 2px 2px var(--lightest-color);	
+}
+
+
+.contact-info,
+.contact-info-2{
+	font-size:40px;
+}
+
+.close {
+  color: var(--shadow-color);
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.prev, 
+.next{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--darkest-color);
+  cursor: pointer;
+}

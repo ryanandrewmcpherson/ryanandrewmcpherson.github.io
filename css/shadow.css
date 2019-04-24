@@ -1,0 +1,16 @@
+section.section-box-style, 
+article.section-box-style,
+header div,
+article.contact,
+article.project,
+footer,
+img.profile,
+.technology,
+p,
+.screenshot,
+.modal-content,
+#myBtn,
+.text,
+.slideshow-image{
+	box-shadow:5px 5px  var(--shadow-color);
+}
