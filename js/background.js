@@ -148,8 +148,7 @@ document.addEventListener("click",function(event){
     
     mouseclickX = event.pageX;
     mouseclickY = event.pageY;
-
-    event.preventDefault();
+    
 })
 
 document.addEventListener("mousedown",function(event){
