@@ -60,14 +60,6 @@
   
 }
   
-@media only screen and (max-width:846px){
-          .two:hover{
-          transform: scale(2) translateX(-25%);
-      }
-          .three:hover{
-          transform: scale(2) translateX(25%);
-      }
-}
 
 @media only screen and (max-width:596px){
   
