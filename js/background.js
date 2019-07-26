@@ -17,8 +17,9 @@ function definecircles(){
     for(let i = 0;i<numcircless;i++){
 
         const size = Math.floor(Math.random()*151) + 50;
-        const x = Math.floor(Math.random()*(parseInt(window.getComputedStyle(document.querySelector("body")).width) + 1 - 2*size)) + size;
-        const y = Math.floor(Math.random()*(parseInt(window.getComputedStyle(document.querySelector("body")).height) + 1 - 2*size)) + size;
+        const bodyStyle = window.getComputedStyle(document.querySelector("body"));
+        const x = Math.floor(Math.random()*(parseInt(bodyStyle.width) + 1 - 2*size)) + size;
+        const y = Math.floor(Math.random()*(parseInt(bodyStyle.height) + 1 - 2*size)) + size;
         let color = Math.floor(Math.random()*3);
 
         if(color === 0){
@@ -47,6 +48,9 @@ function definecircles(){
 definecircles();
 
 window.setInterval(function(){
+
+background.height = parseInt(window.getComputedStyle(document.querySelector("body")).height);
+background.width = parseInt(window.getComputedStyle(document.querySelector("body")).width);
 
 ctx.clearRect(0,0,background.width,background.height);
 
@@ -93,10 +97,17 @@ for(let i = 0;i<circles.length;i++){
 
 window.addEventListener("resize",function(){
 
-        document.querySelector("body").removeChild(background);
-        background.height =  parseInt(window.getComputedStyle(document.querySelector("body")).height);
-        background.width = parseInt(window.getComputedStyle(document.querySelector("body")).width);
-        document.querySelector("body").appendChild(background);
+
+    
+
+    document.querySelector("body").removeChild(background);
+    background.height =  parseInt(window.getComputedStyle(document.querySelector("body")).height);
+    background.width = parseInt(window.getComputedStyle(document.querySelector("body")).width);
+    document.querySelector("body").appendChild(background);
+    
+  
+
+        
         
    
 });
@@ -132,5 +143,5 @@ document.addEventListener("mousemove",function(event){
     event.preventDefault();
 })
 
-var start = null;
+
 
