@@ -1,211 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel = "stylesheet" type = "text/css" href = "./css/all.css"/>
-	<link rel = "stylesheet" type = "text/css" href = "./css/animations.css"/>
-	<link rel = "stylesheet" type = "text/css" href = "./css/root.css"/>
-	<link rel = "stylesheet" type = "text/css" href = "./css/style.css"/>
-	<link rel = "stylesheet" type = "text/css" href = "./css/shadow.css"/>
-	<link rel = "stylesheet" type = "text/css" href = "./css/layout.css"/>
-	<link rel = "stylesheet" type = "text/css" href = "./css/backgrounds.css"/>
-	<link rel = "stylesheet" type = "text/css" href = "./css/projects.css"/>
-	<link rel = "stylesheet" type = "text/css" href = "./css/mediaQueries.css"/>
-	<link rel = "stylesheet" type = "text/css" href = "./css/textstyle.css"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ryan Andrew McPherson</title>
+    <link rel="stylesheet" href="./css/bubbles.css">
 </head>
 <body>
-<div id = "container">
-	<header>
-		<div>
-			<div class = "header-div">
-			<h1> Ryan Andrew McPherson </h1>
-			<a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
-					<i class = "fa fa-bars"></i>
-			</a>
-			</div>
-			<nav class="topnav">
-				<ul id = "myLinks">
-					<li><a href = "#AboutMe" target = "_top"> About Me </a></li>
-				  <li><a href = "#Projects" target = "_top"> Projects </a></li>
-					<li><a href = "#Technology" target = "_top"> Tech Repertoire </a></li>
-				</ul>
-			</nav>	
-		</div>
-	</header>
-	<main>
-	  <section class = 'first-row'>
-	    	<figure class = 'profile-image-box'>
-				<img class = 'profile' src = "./images/profile.jpg">
-				<img class = 'profile2' src = "./images/profile (2).JPG">
-			</figure>
-			<article class = 'partial-page-width contact'>
-				<img class = "map" src = "./images/location.PNG"></img>
-				<article class = 'icons'>
-					<h3 class = 'contact-info'>Contact Info:</h3>
-					<a class = 'contact-link'  href = "mailto: ryanmcphersondev@gmail.com"> <img class = 'gmail'  src = "./images/gmail.png"></img><span class = 'gmail'> ryanmcphersondev@gmail.com </span></a>
-					<a class = 'contact-link' href = "tel:+1-614-981-3265"> <img class = 'phone' src = "./images/iphone.png"></img> <span class = 'phone'>614-981-3265</span></a>
-					<a class = 'contact-link'  href = "http://linkedin.com/in/ryanandrewmcpherson"> <img class = 'linkedin' src = "./images/linkedin.png"></img> <span class = 'linkedin'>LinkedIn</span> </a>
-					<a class = 'contact-link'  href = "http://www.github.com/ryanandrewmcpherson"><img class = 'github' src = "./images/github.png"><span class = 'github'>Github</span></img></a>
-				</article>
-				<article class = 'location'>
-					<h3 class = 'contact-info-2'>Columbus</h3>
-					<img class = 'ohio' src = "./images/ohio.png"></img>
-					<h3 class = 'contact-info-2'>OH</h3>
-				</article>
-			</article>
-	  </section>
-		<section class = 'page-width section-box-style' id = "about-me">
-			<h2 id = "AboutMe">About Me</h2>
-			<p>Full-Stack Developer skilled at pushing the envelope of what is possible in tech, producing highly technical, sophisticated results. Identify and solve unexpected problems. Possess a strong proficiency in mathematical and statistical algorithms as well as informational logistics, data structure, and organization. Use skill set to drive progress and be a good collaborative resource.</p>
-			<button id="myBtn">More</button>
-			<div id="myModal" class="modal">
-					<div class="modal-content">
-						<span class="close">&times;</span>
-						<p>I enjoy coffee, pizza, ice cream, steak, looking up news (especially about technology and cars), driving, watching movies, solving problems and puzzles, coding, babysitting my son, and traveling with my wife. </p>
-						<div class="slideshow-container">
-								<div class="mySlides fade">
-									<div class="numbertext">1 / 7</div>
-									<img class = "slideshow-image" src="./images/coffee.jpg" >
-									<div class="text">Real Coffee</div>
-								</div>
-							
-								<div class="mySlides fade">
-									<div class="numbertext">2 / 7</div>
-									<img class = "slideshow-image" src="./images/pizza.jpg" >
-									<div class="text">Real Pizza</div>
-								</div>
-							
-								<div class="mySlides fade">
-									<div class="numbertext">3 / 7</div>
-									<img class = "slideshow-image" src="./images/ice cream.jpg" >
-									<div class="text">Real Ice Cream</div>
-								</div>
+    <!-- All floating bubbles live here -->
+    <div id="bubble-stage"></div>
 
-								<div class="mySlides fade">
-									<div class="numbertext">4 / 7</div>
-									<img class = "slideshow-image" src="./images/steak.jpg" >
-									<div class="text">Real Steak</div>
-								</div>
+    <!-- Semi-transparent overlay shown when a bubble is centred; click to send bubble back -->
+    <div id="backdrop"></div>
 
-								<div class="mySlides fade">
-									<div class="numbertext">5 / 7</div>
-									<img class = "slideshow-image" src="./images/phone.jpg" >
-									<div class="text">Real Phone</div>
-								</div>
+    <!-- Congratulations screen after all bubbles are popped -->
+    <div id="congrats" class="hidden">
+        <div id="congrats-inner">
+            <h1>🎉 You Popped All The Bubbles! 🎉</h1>
+            <button id="replay-btn">Play Again</button>
+        </div>
+    </div>
 
-								<div class="mySlides fade">
-									<div class="numbertext">6 / 7</div>
-									<img class = "slideshow-image" src="./images/car.jpg" >
-									<div class="text">Real Car</div>
-								</div>
-
-								<div class="mySlides fade">
-									<div class="numbertext">7 / 7</div>
-									<img class = "slideshow-image" src="./images/movie.jpg" >
-									<div class="text">Real Movie</div>
-								</div>	
-							
-								<span class="prev" onclick="plusSlides(-1)">&#10094;</span>
-								<span class="next" onclick="plusSlides(1)">&#10095;</span>
-							</div>
-							<br>
-							
-							<div style="text-align:center">
-								<span class="dot" onclick="currentSlide(1)"></span> 
-								<span class="dot" onclick="currentSlide(2)"></span> 
-								<span class="dot" onclick="currentSlide(3)"></span> 
-								<span class="dot" onclick="currentSlide(4)"></span> 
-								<span class="dot" onclick="currentSlide(5)"></span> 
-								<span class="dot" onclick="currentSlide(6)"></span> 
-								<span class="dot" onclick="currentSlide(7)"></span> 
-							</div>
-					</div>
-			</div>
-		</section>
-		<section class = 'page-width section-box-style'>
-			<h2 id = "Projects">Projects</h2>
-	    <div class = 'projects'>
-				<article class = 'project'>
-					<h3>Reviews Site</h3>
-					<div class = 'screenshot one'><a  href="https://github.com/ryanandrewmcpherson/Reviews-Site"> <img src="./images/reviews-site.PNG" ></img></a></div>
-					<div class = 'description'><h4>Technologies Implemented</h4>
-					<button class = 'collapsible'>+</button></div>
-						<ul class='tech-list'>
-							<li class='tech-list-item'>AutoDesk Sketchbook</li>
-							<li class='tech-list-item'>CSS3</li>
-							<li class='tech-list-item'>Git</li>
-							<li class='tech-list-item'>Gradle</li>
-							<li class='tech-list-item'>HTML</li>
-							<li class='tech-list-item'>Java</li>
-							<li class='tech-list-item'>OOP with APIE</li>
-							<li class='tech-list-item'>Test Driven Development</li>
-							<li class='tech-list-item'>Thymeleaf</li>
-							<li class='tech-list-item'>Spring MVC</li>
-						<ul>
-				</article>
-				<article class = 'project'>
-					<h3>Virtual Pets Amok</h3>
-					<div class = 'screenshot two'><a  href="https://github.com/ryanandrewmcpherson/Virtual-Pets-Amok"> <img src="./images/virtual-pets-amok.PNG" ></img></a></div>
-					<div class = 'description'><h4>Technologies Implemented</h4>
-						<button class = 'collapsible'>+</button></div>
-						<ul class='tech-list'>
-							<li class='tech-list-item'>Git</li>
-							<li class='tech-list-item'>Gradle</li>
-							<li class='tech-list-item'>Java</li>
-							<li class='tech-list-item'>OOP with APIE</li>
-							<li class='tech-list-item'>Test Driven Development</li>
-						<ul>
-				</article>
-				<article class = 'project'>
-					<h3>ATM</h3>
-					<div class = 'screenshot three'><a  href="https://github.com/ryanandrewmcpherson/ATM"> <img src="./images/atm.PNG" ></img></a></div>
-					<div class = 'description'><h4>Technologies Implemented</h4>
-					<button class = 'collapsible'>+</button></div>
-						<ul class='tech-list'>
-							<li class='tech-list-item'>Git</li>
-							<li class='tech-list-item'>Gradle</li>
-							<li class='tech-list-item'>Java</li>
-							<li class='tech-list-item'>OOP with APIE</li>
-							<li class='tech-list-item'>Test Driven Development</li>
-						<ul>
-				</article>
-			</div>	
-		</section>
-		<section class = 'page-width section-box-style'>
-			<h2 id = "Technology">Technology Repertoire</h2>
-			<div class= 'rep-links'>
-				<a class='technology'  href="https://en.wikipedia.org/wiki/Scrum_(software_development)">Agile(Scrum)</a>
-				<a class='technology'  href="https://en.wikipedia.org/wiki/Ajax_(programming)">Ajax</a>
-				<a class='technology'  href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS3</a>
-				<a class='technology'  href="https://en.wikipedia.org/wiki/CSS_Flexible_Box_Layout">Flexbox</a>
-				<a class='technology'  href="https://en.wikipedia.org/wiki/CSS_grid_layout">Grid</a>
-				<a class='technology'  href="https://en.wikipedia.org/wiki/Hibernate_(framework)">Hibernate</a>
-				<a class='technology'  href="https://en.wikipedia.org/wiki/HTML5">HTML5</a>
-				<a class='technology'  href="https://en.wikipedia.org/wiki/Java_(programming_language)">Java</a>
-				<a class='technology'  href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a>
-				<a class='technology'  href="https://en.wikipedia.org/wiki/Java_Persistence_API">JPA</a>
-				<a class='technology'  href="https://en.wikipedia.org/wiki/JSON">JSON</a>
-				<a class='technology'  href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">Model View Controller (MVC)</a>
-				<a class='technology'  href="https://en.wikipedia.org/wiki/Object-oriented_programming">Object Oriented Programming(OOP)</a>
-				<a class='technology'  href="https://en.wikipedia.org/wiki/Progressive_web_applications">Progressive Web Apps</a>
-				<a class='technology'  href="https://en.wikipedia.org/wiki/Relational_database">Relational Databases</a>
-				<a class='technology'  href="https://en.wikipedia.org/wiki/Responsive_web_design">Responsive Design/Mobile</a>
-				<a class='technology'  href="https://en.wikipedia.org/wiki/Version_control">Source Control/Git</a>
-				<a class='technology'  href="https://en.wikipedia.org/wiki/Spring_Framework">Spring</a>
-				<a class='technology'  href="https://en.wikipedia.org/wiki/Test-driven_development">Test Driven Development</a>
-				<a class='technology'  href="https://en.wikipedia.org/wiki/Thymeleaf">Thymeleaf</a>
-			</div>
-		</section>
-	</main>
-	<footer class = 'page-width section-box'>
-		   <h2>© Ryan Andrew McPherson 2019</h2>
-	</footer> 
-</div>   
-	<script src = "./js/app.js"></script> 
-	<script src = "./js/background.js"></script>
-	
+    <script src="./js/bubbles.js"></script>
 </body>
 </html>
 
